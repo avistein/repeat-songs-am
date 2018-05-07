@@ -1,0 +1,13 @@
+{
+	"description": "Repeatedly plays the same song on Amazon Music",
+	"manifest_version": 2,
+	"name": "repeat-songs-am",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["https://music.amazon.in/*"],
+			"js": ["repeatsongs.js"]
+		}
+	]
+}
